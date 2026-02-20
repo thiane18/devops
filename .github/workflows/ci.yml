@@ -4,5 +4,5 @@ jobs:
   init:
     runs-on: ubuntu-latest
     steps:
-      -run: echo "Hello Moussa"
-      -run: echo $HOSTNAME
+      - run: echo "Hello Moussa"
+      - girun: echo $HOSTNAME
