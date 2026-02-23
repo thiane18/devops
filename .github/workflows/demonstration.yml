@@ -1,0 +1,13 @@
+name: Testing github workflow
+on: push
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Etape1-initialisation"
+      - run: echo "Etape2-Recuperation du code"
+      - run: echo "Etape3-Build"
+      - run: echo "Etape4-Tests"
+      - run: echo "Etape5-Packaging"
+      - run: echo "Etape6-Fin du pipeline"
+      - run: echo $HOSTNAME
