@@ -12,7 +12,7 @@ jobs:
           echo"STEP1 =$STEP1"
       - name:  "Etape2-Recuperation du code"
         run:
-          echo "Recuperation du code source"
+          echo "Récuperation du code source"
           echo "STEP2 = ${{vars.VAR2}}"
       - name:  "Etape3-Build"
         run:
