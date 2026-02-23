@@ -17,7 +17,7 @@ jobs:
       - name:  "Etape3-Build"
         run:
           echo"phase de build"
-          echo"${{secrets.MY_SECRET}}"
+          echo" STEP3=${{secrets.MY_SECRET}}"
       - run: echo "Etape4-Tests"
       - run: echo "Etape5-Packaging"
       - run: echo "Etape6-Fin du pipeline"
