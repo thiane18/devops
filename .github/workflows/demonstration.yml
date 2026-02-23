@@ -9,15 +9,15 @@ jobs:
       - name:  "Etape1-initialisation"
         run : 
           echo "Démarrage du pipeline d'integration continue"
-          echo"STEP1 =$STEP1"
+          echo "STEP1 =$STEP1"
       - name:  "Etape2-Recuperation du code"
         run:
           echo "Récuperation du code source"
           echo "STEP2 = ${{vars.VAR2}}"
       - name:  "Etape3-Build"
         run:
-          echo"phase de build"
-          echo" STEP3=${{secrets.MY_SECRET}}"
+          echo "phase de build"
+          echo " STEP3=${{secrets.MY_SECRET}}"
       - run: echo "Etape4-Tests"
       - run: echo "Etape5-Packaging"
       - run: echo "Etape6-Fin du pipeline"
