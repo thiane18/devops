@@ -10,4 +10,4 @@ jobs:
       - run: echo "Etape4-Tests"
       - run: echo "Etape5-Packaging"
       - run: echo "Etape6-Fin du pipeline"
-      - run: echo $HOSTNAME
+      
