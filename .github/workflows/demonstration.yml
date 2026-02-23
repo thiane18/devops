@@ -14,7 +14,10 @@ jobs:
         run:
           echo "Recuperation du code source"
           echo "STEP2 = ${{vars.VAR2}}"
-      - run: echo "Etape3-Build"
+      - name:  "Etape3-Build"
+        run:
+          echo"phase de build"
+          echo"${{secrets.MY_SECRET}}"
       - run: echo "Etape4-Tests"
       - run: echo "Etape5-Packaging"
       - run: echo "Etape6-Fin du pipeline"
