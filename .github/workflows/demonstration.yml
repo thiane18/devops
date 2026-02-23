@@ -3,8 +3,13 @@ on: push
 jobs:
   init:
     runs-on: ubuntu-latest
+    env:
+      STEP1: "Le code vient d'etre poussé sur Github"
     steps:
-      - run: echo "Etape1-initialisation"
+      - name:  "Etape1-initialisation"
+        run : 
+          echo "Démarrage du pipeline d'integration continue"
+          echo"STEP1 =$STEP1"
       - run: echo "Etape2-Recuperation du code"
       - run: echo "Etape3-Build"
       - run: echo "Etape4-Tests"
